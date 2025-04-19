@@ -5,15 +5,12 @@ in
 
 pkgs.mkShellNoCC {
   packages = with pkgs; [
-    gcc
-    rustc
     python311
   ];
 
   shellHook = ''
-    echo "Welcome to the Maze Solver dev environment!"
-    echo "How to run:"
+    echo "Welcome to the sockets example dev environment!"
+    echo "Compile options:"
     echo "python main.py"
-    echo "rustc main.rs && ./main"
   '';
 }

@@ -16,7 +16,7 @@ pkgs.mkShellNoCC {
 
   shellHook = ''
     echo "Welcome to the IP Filter dev environment!"
-    echo "Compile options:"
+    echo "How to run:"
     echo "haxe --main Main.hx --interp"
     echo "javac Main.java && java Main <file_path or directory_path to run all>"
     echo "nim c -r main.nim <file_path or directory_path to run all>"
