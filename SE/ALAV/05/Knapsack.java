@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Knapsack {
     public static void main(String[] args) {
-        var itens1 = new ArrayList<itens>() {
+        var itens1 = new ArrayList<Itens>() {
             {
                 add(new itens(23, 92));
                 add(new itens(31, 57));
@@ -21,7 +21,7 @@ public class Knapsack {
 
         System.out.println("Response 1: " + response);
 
-        var itens2 = new ArrayList<itens>() {
+        var itens2 = new ArrayList<Itens>() {
             {
                 add(new itens(56, 50));
                 add(new itens(59, 50));
@@ -36,8 +36,7 @@ public class Knapsack {
         System.out.println("Response 2: " + response);
     }
 
-    // o de força bruta não foi implementado ainda
-    public static class itens {
+    public static class Itens {
         public int peso;
         public int valor;
 
